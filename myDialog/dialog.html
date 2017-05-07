@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,
+    user-scalable=0">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+    <title>myDialog</title>
+</head>
+<body>
+   <a href="#" id="click">click me</a>
+</div>
+   <script src="dialog.js"></script>
+   <script>
+       $("#click").myDialog({ title:"用户信息",
+        txt:"DOM",
+        ok:"sure",
+        cancel:"cancel",
+        callback:cb()
+        });
+      $.myDialog({ title:"用户信息",
+        txt:"DOM",
+        ok:"sure",
+        cancel:"cancel",
+      });
+     function cb() {
+       console.log("回调函数");
+     }
+   </script>
+</body>
+</html>
